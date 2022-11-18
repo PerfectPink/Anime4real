@@ -1,0 +1,273 @@
+/* .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+.HSB{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
+ .HSB::-webkit-scrollbar {
+  display: none;
+}
+
+
+@font-face {
+    font-family: "Blender-book";
+    src: url(/BlenderPro-Book.ttf);
+}
+@font-face {
+    font-family: "Blender-bold";
+    src: url(/BlenderPro-Bold.ttf);
+}
+.fBlender{
+    font-family:'Blender-book';
+}
+.fBlender-bold{
+    font-family:'Blender-bold';
+}
+body{
+    background-color: #F8F005;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1185px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/* <!-- HTML !-->
+<button class="button-49" role="button">Button 49</button> */
+
+/* CSS */
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+
+.cards{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1150px;
+}
+.anime-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00E6F6;
+    transition: all 0.5s;
+    border: 4px solid black;
+    padding: 1em 5em 1em 5em;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+.anime-card:hover{
+    background-color: white;
+}
+.anime-info{
+    display: flex;
+    flex-direction: column;
+}
+.anime-title-name{
+    font-size: 28px;
+}
+.videoPreview{
+  height: 200px;
+  width: 300px;
+  margin: 15px;
+}
+.cardP{
+  display: flex;
+  flex-direction: row;
+}
+.cardPP{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.cardPP *{
+  margin: 20px;
+}
+.fs-big{
+  font-size: 50px;
+}
+.fs-24{
+  font-size: 24px;
+}
+.iconC{
+  height: 50px;
+  width: 50px;
+  margin: 1em;
+  background-size: contain;
+  display: block;
+}
+.YTico{
+  background-image: url(./ytico.png);
+}
+.vkico{
+  background-image: url(./vkico.png);
+}
+.okico{
+  background-image: url(./okico.png);
+}
+.discordico{
+  background-image: url(./discordico.png);
+}
+.googleico{
+  background-image: url(./gogleico.png);
+  object-fit: fill;
+}
+.icqico{
+  background-image: url(./icqico.png);
+}
+#template-contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dfc{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.dfr{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1132px){
+  .cards{
+      flex-direction: column;
+      justify-content: center;
+  }
+  .cardP{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dfc{
+    flex-direction: column;
+    align-items: center;
+  }
+  .dfr{
+    flex-direction: column;
+  }
+}

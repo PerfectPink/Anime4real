@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="list.js"></script>
+    <title>Anime List</title>
+</head>
+<body class="HSB">
+    <header>
+        <div class="navbar">
+            <button class="button-49" onclick="btnCatalog()">
+                Catalog
+            </button>
+            <button class="button-49" onclick="btnAbout()">
+                About
+            </button>
+            <button class="button-49" onclick="btnContact()">
+                Contacts
+            </button>
+        </div>
+    </header>
+    <section id="01a" class="cards">
+
+    </section>
+
+    <template id="template-catalog">
+        <div class='anime-card' id=---id onclick = renderCard(id) >
+        
+            <img src='---imgSrc'>
+            <span class='anime-title-name fBlender-bold'>
+                ---title
+            </span>
+        </div>
+    </template>
+
+    <template id="template-contacts"> 
+        <div class="dfc">
+            <p class="fBlender-bold fs-24">Where you can find us:</p>
+            <div class="dfr">
+                <a href="---linkYoutube" class="iconC YTico"></a>
+                <a href="---linkVK" class="iconC vkico"></a>
+                <a href="---linkOK" class="iconC okico"></a>
+                <a href="---linkDiscord" class="iconC discordico"></a>
+                <a href="---linkGoogle" class="iconC googleico"></a>
+                <a href="---linkICQ" class="iconC icqico"></a>
+            </div>
+
+        </div>
+        
+    </template>
+
+    <template id="template-about">
+        <p class="fBlender fs-24">
+            Anime database which can help you with choosing anime to watch.
+        </p>
+        <p class="fBlender fs-24">
+            On this site you can see information about choosen anime like rating, age restrictions and description which can help you to solve will you watch anime or not. 
+        </p>
+    </template>
+
+    <template id="template-card">
+        <div class="cardP">
+            <div>
+                <img src="---imgSrc" alt="">
+            </div>
+            <div class="cardPP">
+                <span class="fBlender-bold fs-big">---title</span>
+                <div>
+                    <span class="fBlender-bold fs-24">Rating: ---averageRating</span>
+                    <span class="fBlender-bold fs-24">Favorites: ---favoritesCount</span>
+                    <span class="fBlender-bold fs-24">Age: ---ageRating</span>
+                </div>
+                <div>
+                    <span class="fBlender">---description</span>
+                </div>
+                <div>
+                    <span class="fBlender">Anime Type: ---subtype</span>
+                    <span class="fBlender">Status: ---status</span>
+
+                </div>
+                <div>
+                    <span class="fBlender">Starts: ---startDate</span>
+                    <span class="fBlender">Ends: ---endDate</span>
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+</html>
