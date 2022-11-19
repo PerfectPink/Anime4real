@@ -14,11 +14,11 @@
 
 @font-face {
     font-family: "Blender-book";
-    src: url(/BlenderPro-Book.ttf);
+    src: url(./BlenderPro-Book.ttf);
 }
 @font-face {
     font-family: "Blender-bold";
-    src: url(/BlenderPro-Bold.ttf);
+    src: url(./BlenderPro-Bold.ttf);
 }
 .fBlender{
     font-family:'Blender-book';
